@@ -60,7 +60,7 @@
 	pinctrl-0 = <&pinctrl_ecspi1_1>;
 	status = "okay";
    
-	  qca7000: ethernet@0 {
+	  qca7000: ethernet0@0 {
 		compatible = "qca,qca7000";
 		reg = <0x0>;
 		interrupt-parent = <&gpio3>;      /* GPIO Bank 3 */
