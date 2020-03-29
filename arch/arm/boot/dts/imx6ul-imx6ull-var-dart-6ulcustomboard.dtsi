@@ -53,6 +53,7 @@
 	status = "okay";
 };
 
+/*
 &ecspi1 {
 	fsl,spi-num-chipselects = <1>;
 	cs-gpios = <&gpio4 26 0>;
@@ -72,17 +73,17 @@
 	    
         };
 };
-
+*/
 
 	
 	
 
 
 
-//&fec1 {
-//	pinctrl-0 = <&pinctrl_enet1>, <&pinctrl_enet1_gpio>;
-//	/delete-node/ mdio;
-//};
+&fec1 {
+	pinctrl-0 = <&pinctrl_enet1>, <&pinctrl_enet1_gpio>;
+	/delete-node/ mdio;
+};
 
 &fec2 {
 	pinctrl-names = "default";
