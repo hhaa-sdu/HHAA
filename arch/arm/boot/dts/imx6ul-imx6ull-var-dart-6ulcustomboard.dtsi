@@ -54,7 +54,7 @@
 	status = "okay";
 };
 
-
+/*
 &ecspi1 {
 	fsl,spi-num-chipselects = <1>;
 	cs-gpios = <&gpio4 26 0>;
