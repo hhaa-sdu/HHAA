@@ -94,6 +94,7 @@
 	dc-supply = <&reg_gpio_dvfs>;
 };
 
+/*
 &fec1 {
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_enet1>, <&pinctrl_enet1_gpio>, <&pinctrl_enet1_mdio>;
@@ -118,7 +119,7 @@
 		};
 	};
 };
-
+*/
 &gpc {
 	fsl,cpu_pupscr_sw2iso = <0x2>;
 	fsl,cpu_pupscr_sw = <0x1>;
