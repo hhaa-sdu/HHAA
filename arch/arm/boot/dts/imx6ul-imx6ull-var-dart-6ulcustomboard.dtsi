@@ -85,7 +85,7 @@
 	    chip1: spidev@1 {
                compatible = "spidev";
                spi-max-frequency = <12000000>;
-               reg = <0>;
+               reg = <1>;
         };
 };
 
