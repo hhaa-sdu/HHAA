@@ -58,7 +58,6 @@
 	
 
 &fec1 {
-	local-mac-address = [ 00 01 87 09 19 3A ];
 	pinctrl-0 = <&pinctrl_enet1>, <&pinctrl_enet1_gpio>;
 	/delete-node/ mdio;
 };
@@ -72,7 +71,7 @@
 	pinctrl-0 = <&pinctrl_ecspi1_1>;
 	status = "okay";
    
-	  qca7000: ethernet@0 {
+	    qca7000: ethernet@0 {
 		compatible = "qca,qca7000";
 		reg = <0x0>;
 		interrupt-parent = <&gpio3>;      /* GPIO Bank 3 */
@@ -82,6 +81,12 @@
 		spi-max-frequency = <8000000>;    /* freq: 8 MHz */
         local-mac-address = [ 00 01 87 09 19 3A ];
 		};
+		
+	    chip1: spidev@0 {
+               compatible = "spidev";
+               spi-max-frequency = <12000000>;
+               reg = <0>;
+        };
 };
 
 
