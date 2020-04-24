@@ -82,7 +82,7 @@
         local-mac-address = [ 00 01 87 09 19 3A ];
 		};
 		
-	    chip1: spidev@0 {
+	    chip1: spidev@1 {
                compatible = "spidev";
                spi-max-frequency = <12000000>;
                reg = <0>;
