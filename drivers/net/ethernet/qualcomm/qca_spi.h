@@ -37,7 +37,7 @@
 #define QCASPI_DRV_VERSION "0.2.7-i"
 #define QCASPI_DRV_NAME    "qcaspi"
 
-#define QCASPI_GOOD_SIGNATURE 0x0000  //0xAA55  signature
+#define QCASPI_GOOD_SIGNATURE 0xAA55  //signature
 
 #define TX_RING_MAX_LEN 10
 #define TX_RING_MIN_LEN 2
