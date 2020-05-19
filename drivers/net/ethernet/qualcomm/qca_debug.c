@@ -166,11 +166,13 @@ qcaspi_remove_device_debugfs(struct qcaspi *qca)
 void
 qcaspi_init_device_debugfs(struct qcaspi *qca)
 {
+	qcaspi_info_show(qcaspi);
 }
 
 void
 qcaspi_remove_device_debugfs(struct qcaspi *qca)
 {
+	
 }
 
 #endif
