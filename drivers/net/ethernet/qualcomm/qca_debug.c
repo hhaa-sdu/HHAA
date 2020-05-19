@@ -143,6 +143,7 @@ qcaspi_init_device_debugfs(struct qcaspi *qca)
 {
 	struct dentry *device_root;
 
+
 	device_root = debugfs_create_dir(dev_name(&qca->net_dev->dev), NULL);
 	qca->device_root = device_root;
 
@@ -153,6 +154,13 @@ qcaspi_init_device_debugfs(struct qcaspi *qca)
 	}
 	debugfs_create_file("info", S_IFREG | S_IRUGO, device_root, qca,
 			    &qcaspi_info_ops);
+				
+				printk(KERN_ALERT "Debugging code before.1\n");
+		
+		qcaspi_info_show(qcaspi);
+		printk(KERN_ALERT "Debugging code after.1\n");
+			
+			
 }
 
 void
@@ -166,7 +174,7 @@ qcaspi_remove_device_debugfs(struct qcaspi *qca)
 void
 qcaspi_init_device_debugfs(struct qcaspi *qca)
 {
-	qcaspi_info_show(qcaspi);
+
 }
 
 void

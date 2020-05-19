@@ -969,6 +969,7 @@ qca_spi_probe(struct spi_device *spi)
 		return -EFAULT;
 	}
 
+	printk(KERN_ALERT "Inforamation1.\n");
 	qcaspi_init_device_debugfs(qca);
 
 	return 0;
